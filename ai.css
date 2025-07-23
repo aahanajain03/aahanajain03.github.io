@@ -60,10 +60,17 @@ html{
     font-size: 60%;
     font-weight: bold;
     overflow-x: hidden;
+    height: 100%;
 }
 body{
     background: var(--bg-color);
-    color: var(--text-color)
+    color: var(--text-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper{
+    flex: 1;
 }
 .header{
     position: fixed;

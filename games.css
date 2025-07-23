@@ -60,10 +60,17 @@ html{
     font-size: 60%;
     font-weight: bold;
     overflow-x: hidden;
+    height: 100%;
 }
 body{
     background: var(--bg-color);
-    color: var(--text-color)
+    color: var(--text-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper{
+    flex: 1;
 }
 .header{
     position: fixed;
@@ -89,7 +96,8 @@ body{
     transform: scale(1.1);
 }
 .logo span{
-    text-shadow: 0 0 25px var(--main-color)
+    text-shadow: 0 0 25px var(--main-color);
+    color: var(--main-color);
 }
 .navbar a{
     font-size: 1.8rem;
@@ -106,7 +114,32 @@ body{
 .heading{
     font-size: 8rem;
     text-align: center;
-    margin: 5rem 0;
+    margin: 15rem 0;
+}
+
+.mini{
+    width: 29%;
+    margin-left: 15rem;
+    display: flex;
+    border: 0px solid var(--main-color);
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: start;
+}
+.mini-box{
+    flex: 1;
+    margin: 15px;
+    padding: 40px;
+    width: 100px;
+    height: 350px;
+    display: flex;
+    border: 5px solid var(--main-color);
+}
+.mini-name{
+    color: white;
+    margin: 20px;
+    
 }
 .footer{
     position: relative;

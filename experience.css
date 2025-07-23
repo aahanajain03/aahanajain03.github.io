@@ -60,10 +60,17 @@ html{
     font-size: 60%;
     font-weight: bold;
     overflow-x: hidden;
+    height: 100%;
 }
 body{
     background: var(--bg-color);
-    color: var(--text-color)
+    color: var(--text-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper{
+    flex: 1;
 }
 .header{
     position: fixed;
@@ -204,11 +211,12 @@ body{
 }
 .footer{
     position: relative;
-    bottom: 0;
     width: 100%;
     padding: 40px 0;
+    margin-bottom: 0;
     background-color: var(--second-bg-color);
 }
+
 .footer .social{
     text-align: center;
     padding-bottom: 25px;
