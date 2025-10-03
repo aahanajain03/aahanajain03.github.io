@@ -268,7 +268,7 @@ body{
     color: white;
 }
 .project-box{
-    width: 400px;
+    width: 387px;
     height: 500px;
     font-size: 24px;
     background-color: var(--second-bg-color);
@@ -281,7 +281,10 @@ body{
     color: white;
     margin: 20px;
     margin-bottom: 50px;
-    margin-left: 40px;
+    margin-left: 55px;
+    margin-right: 55px;
+    justify-content: space-evenly;
+    display: inline-block;
 }
 .project-box:hover{
     transform: scale(1.05);
