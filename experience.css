@@ -282,7 +282,6 @@ body{
     margin: 20px;
     margin-bottom: 50px;
     margin-left: 40px;
-    flex-shrink: 0;
 }
 .project-box:hover{
     transform: scale(1.05);
@@ -290,12 +289,10 @@ body{
 }
 .project-img{
     border-radius: 10%;
-    width: 300px;
-    height: 300px;
 }
 .project-img img{
-    width: 300px;
-    height: 300px;
+    position: relative;
+    width: 22vw;
     border-radius: 3%;
     box-shadow: 0 0 2px var(--main-color);
     cursor: pointer;
